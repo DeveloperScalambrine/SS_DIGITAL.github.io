@@ -1,14 +1,75 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Minha Página</title>
-</head>
-<body>
+<!doctype html>
+<li class="chip">Excel</li>
+<li class="chip">ETL</li>
+<li class="chip">DataViz</li>
+<li class="chip">Storytelling</li>
+<li class="chip">Machine Learning</li>
+<li class="chip">AI</li>
+</ul>
+<div class="cards">
+<article class="card">
+<h4>ETL & Qualidade de Dados</h4>
+<p>Pipeline limpo, confiável e auditável — da extração ao consumo analítico.</p>
+</article>
+<article class="card">
+<h4>Visualização & Narrativa</h4>
+<p>Dashboards e relatórios que traduzem complexidade em decisões estratégicas.</p>
+</article>
+<article class="card">
+<h4>Modelagem Preditiva</h4>
+<p>Algoritmos aplicados ao negócio, com foco em impacto real e mensurável.</p>
+</article>
+</div>
+</section>
 
-    <h1>Bem-vindo à minha página!</h1>
-    <p>Este é um parágrafo de exemplo.</p>
 
+<article class="post-card" id="projetos" aria-labelledby="projetos-title">
+<header>
+<h3 id="projetos-title">Projetos em Destaque</h3>
+</header>
+<div class="post-content">
+<p>No portfólio, há categorias como <strong>Análise de Dados</strong>, <strong>Machine Learning</strong> e <strong>AI</strong>, demonstrando amplitude técnica e atualização constante com as tendências do mercado.</p>
+<blockquote class="pull-quote">
+“Se você busca alguém para desvendar os mistérios por trás dos seus números, ele é a pessoa certa.”
+</blockquote>
+</div>
+</article>
+
+
+<section class="post-card" aria-labelledby="soft-title">
+<header>
+<h3 id="soft-title">Soft Skills que Fazem a Diferença</h3>
+</header>
+<div class="post-content">
+<ul class="checklist">
+<li>Comunicação clara e escuta ativa</li>
+<li>Pensamento crítico e resolução de problemas</li>
+<li>Trabalho em equipe e colaboração</li>
+<li>Foco em processos e impacto real</li>
+</ul>
+<p>É a combinação perfeita de inteligência técnica e interpessoal, garantindo que as soluções não só funcionem, como também sejam bem compreendidas e implementadas.</p>
+</div>
+</section>
+
+
+<section class="cta" id="cta" aria-labelledby="cta-title">
+<h3 id="cta-title">Veja tudo isso em ação</h3>
+<p>Acesse o portfólio completo e conheça os projetos, cases e soluções.</p>
+<a class="btn btn-primary btn-lg" href="https://developerscalambrine.github.io/" target="_blank" rel="noopener">Acessar Portfólio</a>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> Carlos Henrique • Dados, Família e Estratégia</p>
+</div>
+</footer>
+
+
+<script>
+// Ano automático no rodapé
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
