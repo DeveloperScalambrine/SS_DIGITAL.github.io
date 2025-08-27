@@ -1,0 +1,140 @@
+/* ============================
+backdrop-filter: saturate(180%) blur(10px);
+}
+
+
+.header-wrap {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0.75rem 0;
+}
+
+
+.brand {
+display: inline-grid;
+place-items: center;
+width: 40px; height: 40px;
+border-radius: 12px;
+background: linear-gradient(135deg, var(--brand), var(--brand-2));
+color: #0b0f17;
+font-weight: 800;
+letter-spacing: 0.5px;
+box-shadow: var(--shadow);
+}
+
+
+.nav { display: flex; gap: 1rem; }
+.nav a { padding: 0.5rem 0.75rem; border-radius: 10px; color: var(--muted); }
+.nav a:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+.nav .cta-link { color: var(--text); border: 1px solid rgba(255,255,255,0.1); }
+
+
+/* ============================
+Hero
+============================ */
+.hero {
+padding: 4rem 0 2rem;
+background:
+radial-gradient(1200px 600px at 50% -20%, rgba(34,211,238,0.15), transparent 60%),
+linear-gradient(180deg, rgba(167,139,250,0.12), rgba(167,139,250,0) 40%);
+}
+
+
+.hero h1 {
+font-size: clamp(1.8rem, 2.5vw + 1.5rem, 3rem);
+line-height: 1.15;
+margin: 0 0 0.75rem 0;
+}
+.hero h1 span { color: var(--brand); }
+.lead { font-size: 1.125rem; color: var(--muted); max-width: 60ch; }
+.hero-actions { display: flex; gap: 0.75rem; margin-top: 1.25rem; }
+
+
+/* ============================
+Botões
+============================ */
+.btn {
+display: inline-flex; align-items: center; justify-content: center;
+padding: 0.7rem 1rem; border-radius: 999px; border: 1px solid transparent;
+font-weight: 600; letter-spacing: 0.2px; cursor: pointer; transition: transform .06s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #0b0f17; }
+.btn-ghost { background: transparent; color: var(--text); border-color: rgba(255,255,255,0.15); }
+.btn-lg { padding: 0.9rem 1.25rem; font-size: 1.05rem; }
+
+
+/* ============================
+Cards & Seções
+============================ */
+.post-card {
+background: var(--surface);
+border: 1px solid rgba(255,255,255,0.06);
+border-radius: var(--radius);
+}
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.checklist li { position: relative; padding-left: 1.75rem; margin: 0.5rem 0; }
+.checklist li::before {
+content: "✔";
+position: absolute; left: 0; top: 0.05rem;
+background: linear-gradient(135deg, var(--brand), var(--brand-2));
+-webkit-background-clip: text; background-clip: text; color: transparent;
+font-weight: 800;
+}
+
+
+/* Citação */
+.pull-quote {
+margin: 1rem 0;
+padding: 1rem 1.25rem;
+border-left: 4px solid var(--brand);
+background: rgba(255,255,255,0.04);
+color: var(--muted);
+border-radius: 10px;
+}
+
+
+/* CTA */
+.cta {
+text-align: center;
+background: linear-gradient(180deg, rgba(110,231,243,0.08), rgba(167,139,250,0.08));
+border: 1px solid rgba(255,255,255,0.08);
+border-radius: var(--radius);
+padding: 2rem 1rem;
+margin: 2.5rem 0 3rem;
+box-shadow: var(--shadow);
+}
+.cta p { color: var(--muted); }
+
+
+/* Footer */
+.site-footer {
+border-top: 1px solid rgba(255,255,255,0.08);
+margin-top: 3rem;
+padding: 1.5rem 0 2rem;
+color: var(--muted);
+text-align: center;
+}
+
+
+/* ============================
+Responsividade
+============================ */
+@media (max-width: 900px) {
+.cards { grid-template-columns: 1fr 1fr; }
+}
+
+
+@media (max-width: 600px) {
+.header-wrap { padding: 0.5rem 0; }
+.nav a { padding: 0.4rem 0.6rem; }
+.hero { padding: 3rem 0 1.5rem; }
+.cards { grid-template-columns: 1fr; }
+.btn { width: 100%; }
+.hero-actions { flex-direction: column; }
+}
